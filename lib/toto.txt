@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-FR" lang="fr-FR">
+
+	<head>
+				          	    	<title>flashcode - TCL mobile</title>
+    
+    
+    
+        	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <meta name="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta name="Content-language" content="fr-FR" />
+
+                    <meta name="author" content="Micropole" />
+    
+                <meta name="copyright" content="Tcl.fr" />
+    
+                <meta name="description" content="TCL, réseau des Transports en Commun Lyonnais. Plan des lignes de métro, bus, tramway et funiculaire sur Lyon, Villeurbanne et l'agglomération lyonnaise ; horaires des bus, trams et métros ; trajets sur-mesure : calculer un itinéraire ; tarif des tickets de bus, carnets, abonnements, cartes Técély" />
+    
+                <meta name="keywords" content="TCL, transports en commun lyonnais, bus rhône, tram lyon, métro ville lyon, funiculaire lyon, tramway lyon, plan lignes, lignes métro, lignes bus, lignes tramways, lignes funiculaire, transports en commun lyon, transports en commun Villeurbanne, transports en commun Rhône, horaires bus, horaires trams, horaires métros, calcul trajets, calcul itinéraire, tarif tickets bus, tarif abonnement, tarif carte abonnement, tarif carte Técély, bons plans lyon" />
+    
+        <meta name="MSSmartTagsPreventParsing" content="TRUE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/extension/tcl/design/mobile/stylesheets/structure.css" media="screen" />
+
+
+
+		<script type="text/javascript" src="/var/tcl/cache/public/javascript/d3ef015967ad7f8241bae5be68f7f6a8_1377652711.js" charset="utf-8"></script>
+
+
+
+
+<script type="text/javascript">
+if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+
+    var viewportmeta = document.querySelector('meta[name="viewport"]');
+
+    if (viewportmeta) {
+
+        viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
+
+        document.body.addEventListener('gesturestart', function () {
+
+            viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
+
+        }, false);
+
+    }
+
+}
+
+</script>
+		<link rel="Shortcut icon" href="/extension/tcl/design/mobile/images/favicon.ico" type="image/x-icon" />
+		
+		<!-- google analytics -->
+			
+			<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-17726085-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+			
+			</script>
+			
+			<!-- google analytics -->
+			</head>
+	
+	<body>
+		<div id="CONTAINER" >
+						<div id="HEADER">
+	<a href="/" title="Retour à l'accueil du site"><img src="/extension/tcl/design/mobile/images/logo-TCL-SYTRAL.png" alt="TCL - SYTRAL" width="75" height="60" /></a>
+	<p>Partout, pour tous,  <strong>il y a TCL</strong></p>
+</div>
+
+
+
+						
+			<div class="HORAIRES">
+	<div id="TITLE">
+		<p>Horaires - <span>4 Chemins - La Salette</span></p>
+		<div class="CLEAR-both"></div>
+	</div>
+	
+	<div id="CONTENT">
+													
+										<div class="ICONES-dir">
+							 <div class="ICONES">
+																					
+
+    
+        
+    
+                                                                                                                                            <img src="/var/tcl/storage/images/media/librairie/type-de-ligne/bus/8369-9-fre-FR/BUS.png" width="50" height="38"  style="border: 0px  ;" alt="Bus" title="Bus" />
+            
+    
+    
+    			            	
+
+    
+        
+    
+                                                                                                                                            <img src="/var/tcl/storage/images/me-deplacer/toutes-les-lignes/90/4217-3-fre-FR/90.png" width="60" height="39"  style="border: 0px  ;" alt="Bus 90: Gare de Vaise.Saint-Foy Châtelain" title="Bus 90: Gare de Vaise.Saint-Foy Châtelain" />
+            
+    
+    
+    </div><ul><li><p>Vers <strong>Ste Foy Chatelain.</strong></p></li></ul>
+						    <div class="CLEAR-both"></div>
+						</div>
+						
+					
+												<div class="HORAIRE">
+								<div>
+									Prochain départ
+										
+											<!-- <span class="DEPART-imminent"><img src="/extension/tcl/design/mobile/images/depart-imminent.png" /></span> -->
+										
+											<span class="HEURE-depart">
+												25 min											</span>     
+										
+								</div>
+								<div>
+									Suivant<span class="HEURE-arrivee">42 min</span>
+								</div>
+							</div>
+																	<form action="/flashcode/flashcode.do" method='get'>
+			<input type="hidden" name="code" value="5"/>
+						<input type="submit" value="Actualiser" class="LIEN-suiv"/>
+		</form>
+	</div>
+</div>
+						<div class="CLEAR-both"></div>
+			    					
+					<div id="FOOTER">
+			<div class="ALLO-tcl">
+				Allo TCL 04 26 10 12 12 <span>Prix d'un appel local</span>
+			</div>
+			<div class="navig">
+				<a href="/" class="LIEN-retour" title="Retour à l'accueil du site">Accueil</a>
+				<ul>
+																<li><a href="/Pied-de-page2/Mentions-legales">Mentions légales </a></li>
+											<li><a href="/Pied-de-page2/Contact">Contact </a></li>
+									</ul>
+				<a href="/Mon-TCL2" class="LIEN-mon-tcl" title="Accèder à votre compte TCL"><span>Mon TCL</span> </a>
+							</div>
+		</div>
+					</div> <!-- fin CONTAINER -->
+																												<!-- eStat -->
+			
+			<SCRIPT LANGUAGE="JavaScript">
+			<!--
+			var _PJS=0;
+			//-->
+			</SCRIPT>
+			<SCRIPT LANGUAGE="JavaScript" SRC="http://prof.estat.com/js/276076187740.js"></SCRIPT>
+			<SCRIPT LANGUAGE="JavaScript">
+			<!--
+			if(_PJS)
+			{
+			eStat_id.serial("286086208042");
+			eStat_id.master("218018158547");
+			eStat_id.gp_pg_mq("flashcode");
+			eStat_id.pg_mq("flashcode.do");
+			eStat_tag.post("m");
+			}
+			//-->
+			</SCRIPT>
+			<NOSCRIPT>
+			<IMG SRC="http://prof.estat.com/m/web/276076187740?g=218018158547&c=flashcode&p=flashcode.do&st=0&sjs=0" BORDER="0" WIDTH="1" HEIGHT="1" />
+			</NOSCRIPT>
+			<!-- /eStat -->
+			
+			</body>
+</html>
+
