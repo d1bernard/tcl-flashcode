@@ -1,26 +1,26 @@
 {
   "name": "tcl",
   "version": "0.0.0",
-  "description": "Tools for tcl site",
-  "main": "loadFlashcode.js",
+  "description": "tcl site",
+  "main": "app.js",
   "dependencies": {
     "async": "~0.2.9",
+    "domutils": "~1.2.1",
+    "ejs": "~0.8.5",
+    "jade": "~1.0.0",
+    "express": "~3.4.7",
     "htmlparser2": "~3.3.0",
     "optimist": "~0.6.0",
     "soupselect": "~0.2.0",
-    "sqlite3": "~2.1.19",
-    "domutils": "~1.2.1",
-    "express": "3.4.7",
-    "jade": "*",
-
+    "sqlite3": "~2.1.19"
   },
   "devDependencies": {},
   "scripts": {
-	    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "tcl",
-    "lyon"
+    "horaires"
   ],
   "author": "dominique bernard",
   "license": "BSD-2-Clause"

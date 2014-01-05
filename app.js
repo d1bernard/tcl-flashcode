@@ -5,6 +5,9 @@
 
 var express = require('express');
 var routes = require('./routes');
+var line = require('./routes/line');
+var direction = require('./routes/direction');
+var stop = require('./routes/stop');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
@@ -31,6 +34,10 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+app.get('/line/all.json', line.lines_json);
+app.get('/direction/line/:id/all.json', direction.directionsByLine_json);
+app.get('/stop/line/:lineId/all.json', stop.stopsByLineAndDir_json);
+app.get('/stop/line/:lineId/direction/:directionId/all.json', stop.stopsByLineAndDir_json);
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){

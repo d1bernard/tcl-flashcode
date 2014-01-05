@@ -11,7 +11,7 @@ var argv = require('optimist')
     .default({min: 1, max: 10000})
     .argv;
 
-var db = new sqlite3.cached.Database('tcl.db');
+var db = new sqlite3.cached.Database('tcl2.db');
 var url,
     i = 0,
     req,
@@ -38,7 +38,9 @@ var reqHandler = function (flashcodeUrl) {
         res.on('end', function () {
             tclFlowParser.parse(flashcodeUrl, data, function (err, flashcode) {
                 console.log('flashcode :' + util.inspect(flashcode, {showHidden: true, depth: 5}));
-                async.eachSeries(flashcode.timeTables, saveTimeTable, errHandler);
+                if (flashcode.timeTables) {
+                	async.eachSeries(flashcode.timeTables, saveTimeTable, errHandler);
+                }
             });
         });
     };
