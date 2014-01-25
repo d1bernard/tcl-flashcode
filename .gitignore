@@ -1,0 +1,10 @@
+node_modules
+.buildpath
+.externalToolBuilders/
+.idea/
+.jshintrc
+.jslintrc
+.npmignore
+.project
+.settings/
+
