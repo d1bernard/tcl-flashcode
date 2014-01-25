@@ -1,7 +1,7 @@
 {
-  "name": "tcl",
-  "version": "0.0.0",
-  "description": "tcl site",
+  "name": "lyon_tcl_flashcode",
+  "version": "0.0.1",
+  "description": "lyon_tcl_flashcodes",
   "main": "app.js",
   "dependencies": {
     "async": "~0.2.9",
@@ -20,7 +20,9 @@
   },
   "keywords": [
     "tcl",
-    "horaires"
+    "horaires",
+    "lyon",
+    "flashcode"
   ],
   "author": "dominique bernard",
   "license": "BSD-2-Clause"

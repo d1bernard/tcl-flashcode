@@ -1,0 +1,13 @@
+<!DOCTYPE html><html data-ng-app="tcl" class="no-js"><head><!----><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title></title><meta name="description" content=""><meta name="viewport" content="width=device-width"><link rel="stylesheet" href="css/normalize.min.css"><link rel="stylesheet" href="css/vendor/ng-grid.min.css"><link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="css/style.css"><script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script><script src="js/plugins.js"></script><script src="js/main.js"></script></head><body><!--if lt IE 7p.chromeframe
+  | You are using an
+  strong outdated
+  | browser. Please
+  a(href='http://browsehappy.com/') upgrade your browser
+  | or
+  a(href='http://www.google.com/chromeframe/?redirect=true') activate Google Chrome Frame
+  | to improve your experience.--><div class="header-container"><header class="wrapper clearfix"><h1 class="title">h1.title</h1><nav><ul><li><a href="#">nav ul li a</a></li><li><a href="#">nav ul li a</a></li><li><a href="#">nav ul li a</a></li></ul></nav></header></div><div class="main-container"><div class="main wrapper clearfix"><h1></h1><p>Welcome to </p><div data-ng-controller="criteriaCtrl"><form data-ng-submit="search()"><select data-ng-model="criteria.line" data-ng-options="line.id as line.number for line in lines"></select><select data-ng-model="criteria.direction" data-ng-options="direction.id as direction.terminus.name for direction in directions"></select><select data-ng-model="criteria.stop" data-ng-options="stop.id as stop.name for stop in stops"></select><input type="submit" id="submit" value="Submit"></form><div data-ng-grid="gridOptions" class="grid"></div></div></div><!--#main --></div><!--#main-container --><div class="footer-container"><footer class="wrapper"><h3>footer</h3></footer></div><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\\/script>')</script><script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script><script>window.angular || document.write('<script src="js/vendor/angular.min.js"><\\/script>')</script><script src="//cdnjs.cloudflare.com/ajax/libs/ng-grid/2.0.7/ng-grid.js"></script><script>window.ngGrid || document.write('<script src="js/vendor/ng-grid-2.0.7.min.js"><\\/script>')</script><script src="js/controller/controllers.js"></script><script>var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+(function(d,t){
+var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+g.src='//www.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g,s);
+})(document,'script');</script></body></html>

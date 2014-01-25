@@ -8,11 +8,13 @@ html.no-js(data-ng-app='tcl')
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width')
     link(rel='stylesheet', href='css/normalize.min.css')
+    link(rel='stylesheet', href='css/vendor/ng-grid.min.css')
     link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet', href='css/style.css')
     script(src='js/vendor/modernizr-2.6.2-respond-1.1.0.min.js')
-    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js')
-    script.
-      window.angular || document.write('<script src="js/vendor/angular.min.js"><\\/script>')
+    script(src='js/plugins.js')
+    script(src='js/main.js')
+
   body
     //if lt IE 7
       p.chromeframe
@@ -47,8 +49,13 @@ html.no-js(data-ng-app='tcl')
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js')
     script.
       window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\\/script>')
-    script(src='js/plugins.js')
-    script(src='js/main.js')
+    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js')
+    script.
+      window.angular || document.write('<script src="js/vendor/angular.min.js"><\\/script>')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/ng-grid/2.0.7/ng-grid.js')
+    script.
+          window.ngGrid || document.write('<script src="js/vendor/nggrid/ng-grid-2.0.7.min.js"><\\/script>')
+    script(src='js/vendor/nggrid/plugins/ng-grid-flexible-height.js')
     script(src='js/controller/controllers.js')
     script.
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

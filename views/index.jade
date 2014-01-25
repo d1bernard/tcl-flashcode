@@ -1,12 +1,19 @@
 extends layout3
 
 block content
-  h1= title
-  p Welcome to #{title}
-  div(data-ng-controller="criteriaCtrl")
-    form
-      select(data-ng-model="criteria.line", data-ng-options="line.id as line.number for line in lines")
-      select(data-ng-model="criteria.direction", data-ng-options="direction.id as direction.terminus.name for direction in directions")
-      select(data-ng-model="criteria.stop", data-ng-options="stop.id as stop.name for stop in stops")
+
+    h1= title
+    p Welcome to #{title}
+    div(data-ng-controller="criteriaCtrl")
+        form(data-ng-submit="search()")
+          select(data-ng-model="criteria.line", data-ng-options="line.id as line.number for line in lines")
+          select(data-ng-model="criteria.direction", data-ng-options="direction.id as direction.terminus.name for direction in directions")
+          select(data-ng-model="criteria.stop", data-ng-options="stop.id as stop.name for stop in stops")
+          input(type="submit" id="submit" value="Submit")
+        div.grid(data-ng-grid="gridOptions")
+
+
+
+
       
     

@@ -18,7 +18,7 @@ var errHandler = function (e) {
  */
 
 exports.lines_json = function(req,res) {
-    var db = new sqlite3.cached.Database('tcl.db');
+    var db = new sqlite3.cached.Database('tcl2.db');
     var responseCallback = function(err, lines) {
         if (err) {
             errHandler(err);

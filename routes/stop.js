@@ -19,7 +19,7 @@ var errHandler = function (e) {
 exports.stopsByLineAndDir_json = function(req,res) {    
     var lineId = req.params.lineId;
     var directionId = req.params.directionId;
-    var db = new sqlite3.cached.Database('tcl.db');
+    var db = new sqlite3.cached.Database('tcl2.db');
     var responseCallback = function(err, stops) {
         if (err) {
             errHandler(err);
